@@ -1,0 +1,102 @@
+/* Declarando Variables */
+:root{
+	/*Colores*/
+	--primary: #5385C1;
+	--colorTexto: #9a9a9a;
+	--colorTextoLight:  #bbbbbb;
+	--blanco: #FFFFFF;
+	--negro: #000000;
+	/*Fuentes*/
+	--fnormal: 'Relaway';
+	--flight: 'Relaway Light';
+	--fmedium: 'Relaway Medium';
+	--fbold: 'Relaway Bold';
+	--fsemibold: 'Relaway Semibold';
+	--fextrabold: 'Relaway Extrabold';
+}
+
+/* Estilos Globales */
+*, *:after, *:before {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+/* Estilos Generales */
+html{
+	box-sizing: inherit;
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 16px;
+	font-family: var(--fnormal);
+}
+
+a{ text-decoration: none; }
+
+h1{ font-size: calc(4.8rem + 1vw); }
+h2{ font-size: calc(3.9rem + 1vw); }
+h3{ font-size: calc(3.1rem + 1vw); }
+h4{ font-size: calc(2.5rem + 1vw); }
+h5{ font-size: calc(2rem + 1vw); }
+
+img{max-width: 100%;}
+
+/* Reutilizables */
+.container{
+	max-width: 120rem;
+	width: 85%;
+	margin: 0 auto;
+}
+
+/* banner Top */
+.bannerTop{
+	background-image: url(../images/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	min-height: 70vh;
+	color: var(--blanco);
+	padding: 4rem 0;
+	border-top: 8px solid var(--primary);
+}
+.bannerTop-container{
+	min-height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+.bannerTop-top{
+	display: flex;
+	justify-content: space-between;
+}
+.bannerTop-top .title-logo{	font-family: var(--fbold); }
+.bannerTop-top a{ color: var(--blanco); }
+
+.bannerTop-middle{
+	flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bannerTop-middle .title{
+	margin: 0;
+	font-family: var(--flight);
+    font-weight: 100;
+    color: var(--colorTextoLight);
+}
+.bannerTop-middle .subtitle{
+	font-family: var(--flight);
+	color: var(--colorTextoLight);
+	margin-top: 1.5rem;
+}
+
+/* Navigation */
+.navigation a{
+	color: var(--blanco);
+}
+.navigation a:nth-child(2){ margin: 0 2rem; }
+
+/* Leyendas */
